@@ -5,6 +5,7 @@ describe('Task API',  () => {
     it('should get all tasks', async () => {
       const response = await request(app).get('/api/tasks')
       expect(response.statusCode).toBe(200);
+      console.log(response.body)
     })
 })
 
